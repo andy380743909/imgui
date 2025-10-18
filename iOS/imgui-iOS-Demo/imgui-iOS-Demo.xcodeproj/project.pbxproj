@@ -1,0 +1,595 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A1FA63622EA3648500B491FD /* imguiFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1FA635A2EA3648400B491FD /* imguiFramework.framework */; };
+		A1FA63632EA3648500B491FD /* imguiFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A1FA635A2EA3648400B491FD /* imguiFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A1FA63682EA364F000B491FD /* imconfig.h in Headers */ = {isa = PBXBuildFile; fileRef = A1FA63252EA356A400B491FD /* imconfig.h */; };
+		A1FA63692EA364F000B491FD /* imgui.h in Headers */ = {isa = PBXBuildFile; fileRef = A1FA63262EA356A400B491FD /* imgui.h */; };
+		A1FA636A2EA3657800B491FD /* imgui_impl_metal.mm in Sources */ = {isa = PBXBuildFile; fileRef = A1FA632D2EA356DC00B491FD /* imgui_impl_metal.mm */; };
+		A1FA636B2EA3657800B491FD /* imgui.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A1FA63272EA356A400B491FD /* imgui.cpp */; };
+		A1FA636C2EA3657800B491FD /* imgui_demo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A1FA63282EA356A400B491FD /* imgui_demo.cpp */; };
+		A1FA636D2EA3657800B491FD /* imgui_draw.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A1FA63292EA356A400B491FD /* imgui_draw.cpp */; };
+		A1FA636E2EA3657800B491FD /* imgui_tables.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A1FA632B2EA356A400B491FD /* imgui_tables.cpp */; };
+		A1FA636F2EA3657800B491FD /* imgui_widgets.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A1FA632C2EA356A400B491FD /* imgui_widgets.cpp */; };
+		A1FA63702EA3659200B491FD /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1FA634F2EA3589000B491FD /* Metal.framework */; };
+		A1FA63712EA3659200B491FD /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1FA63502EA3589000B491FD /* MetalKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A1FA63602EA3648500B491FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A1FA62FF2EA3562200B491FD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A1FA63592EA3648400B491FD;
+			remoteInfo = imguiFramework;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A1FA63422EA356FC00B491FD /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A1FA63632EA3648500B491FD /* imguiFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A1FA63072EA3562200B491FD /* imgui-iOS-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "imgui-iOS-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1FA63252EA356A400B491FD /* imconfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = imconfig.h; path = "/Users/andy/Projects/bgfx-ios-lua/imgui/imconfig.h"; sourceTree = "<absolute>"; };
+		A1FA63262EA356A400B491FD /* imgui.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = imgui.h; path = "/Users/andy/Projects/bgfx-ios-lua/imgui/imgui.h"; sourceTree = "<absolute>"; };
+		A1FA63272EA356A400B491FD /* imgui.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = imgui.cpp; path = "/Users/andy/Projects/bgfx-ios-lua/imgui/imgui.cpp"; sourceTree = "<absolute>"; };
+		A1FA63282EA356A400B491FD /* imgui_demo.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = imgui_demo.cpp; path = "/Users/andy/Projects/bgfx-ios-lua/imgui/imgui_demo.cpp"; sourceTree = "<absolute>"; };
+		A1FA63292EA356A400B491FD /* imgui_draw.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = imgui_draw.cpp; path = "/Users/andy/Projects/bgfx-ios-lua/imgui/imgui_draw.cpp"; sourceTree = "<absolute>"; };
+		A1FA632A2EA356A400B491FD /* imgui_internal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = imgui_internal.h; path = "/Users/andy/Projects/bgfx-ios-lua/imgui/imgui_internal.h"; sourceTree = "<absolute>"; };
+		A1FA632B2EA356A400B491FD /* imgui_tables.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = imgui_tables.cpp; path = "/Users/andy/Projects/bgfx-ios-lua/imgui/imgui_tables.cpp"; sourceTree = "<absolute>"; };
+		A1FA632C2EA356A400B491FD /* imgui_widgets.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = imgui_widgets.cpp; path = "/Users/andy/Projects/bgfx-ios-lua/imgui/imgui_widgets.cpp"; sourceTree = "<absolute>"; };
+		A1FA632D2EA356DC00B491FD /* imgui_impl_metal.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = imgui_impl_metal.mm; path = "/Users/andy/Projects/bgfx-ios-lua/imgui/backends/imgui_impl_metal.mm"; sourceTree = "<absolute>"; };
+		A1FA632E2EA356DC00B491FD /* imgui_impl_osx.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = imgui_impl_osx.mm; path = "/Users/andy/Projects/bgfx-ios-lua/imgui/backends/imgui_impl_osx.mm"; sourceTree = "<absolute>"; };
+		A1FA634A2EA3584200B491FD /* imgui_impl_metal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = imgui_impl_metal.h; path = "/Users/andy/Projects/bgfx-ios-lua/imgui/backends/imgui_impl_metal.h"; sourceTree = "<absolute>"; };
+		A1FA634B2EA3584200B491FD /* imgui_impl_osx.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = imgui_impl_osx.h; path = "/Users/andy/Projects/bgfx-ios-lua/imgui/backends/imgui_impl_osx.h"; sourceTree = "<absolute>"; };
+		A1FA634F2EA3589000B491FD /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk/System/Library/Frameworks/Metal.framework; sourceTree = DEVELOPER_DIR; };
+		A1FA63502EA3589000B491FD /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk/System/iOSSupport/System/Library/Frameworks/MetalKit.framework; sourceTree = DEVELOPER_DIR; };
+		A1FA635A2EA3648400B491FD /* imguiFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = imguiFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		A1FA631E2EA3562300B491FD /* Exceptions for "imgui-iOS-Demo" folder in "imgui-iOS-Demo" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = A1FA63062EA3562200B491FD /* imgui-iOS-Demo */;
+		};
+		A1FA63672EA3648500B491FD /* Exceptions for "imguiFramework" folder in "imguiFramework" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			publicHeaders = (
+				imguiFramework.h,
+			);
+			target = A1FA63592EA3648400B491FD /* imguiFramework */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		A1FA63092EA3562200B491FD /* imgui-iOS-Demo */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				A1FA631E2EA3562300B491FD /* Exceptions for "imgui-iOS-Demo" folder in "imgui-iOS-Demo" target */,
+			);
+			path = "imgui-iOS-Demo";
+			sourceTree = "<group>";
+		};
+		A1FA635B2EA3648500B491FD /* imguiFramework */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				A1FA63672EA3648500B491FD /* Exceptions for "imguiFramework" folder in "imguiFramework" target */,
+			);
+			path = imguiFramework;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A1FA63042EA3562200B491FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1FA63622EA3648500B491FD /* imguiFramework.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1FA63572EA3648400B491FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1FA63702EA3659200B491FD /* Metal.framework in Frameworks */,
+				A1FA63712EA3659200B491FD /* MetalKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A1FA62FE2EA3562200B491FD = {
+			isa = PBXGroup;
+			children = (
+				A1FA63242EA3563F00B491FD /* imgui */,
+				A1FA63092EA3562200B491FD /* imgui-iOS-Demo */,
+				A1FA635B2EA3648500B491FD /* imguiFramework */,
+				A1FA634E2EA3589000B491FD /* Frameworks */,
+				A1FA63082EA3562200B491FD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A1FA63082EA3562200B491FD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A1FA63072EA3562200B491FD /* imgui-iOS-Demo.app */,
+				A1FA635A2EA3648400B491FD /* imguiFramework.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A1FA63242EA3563F00B491FD /* imgui */ = {
+			isa = PBXGroup;
+			children = (
+				A1FA634A2EA3584200B491FD /* imgui_impl_metal.h */,
+				A1FA634B2EA3584200B491FD /* imgui_impl_osx.h */,
+				A1FA632D2EA356DC00B491FD /* imgui_impl_metal.mm */,
+				A1FA632E2EA356DC00B491FD /* imgui_impl_osx.mm */,
+				A1FA63252EA356A400B491FD /* imconfig.h */,
+				A1FA63262EA356A400B491FD /* imgui.h */,
+				A1FA63272EA356A400B491FD /* imgui.cpp */,
+				A1FA63282EA356A400B491FD /* imgui_demo.cpp */,
+				A1FA63292EA356A400B491FD /* imgui_draw.cpp */,
+				A1FA632A2EA356A400B491FD /* imgui_internal.h */,
+				A1FA632B2EA356A400B491FD /* imgui_tables.cpp */,
+				A1FA632C2EA356A400B491FD /* imgui_widgets.cpp */,
+			);
+			path = imgui;
+			sourceTree = "<group>";
+		};
+		A1FA634E2EA3589000B491FD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A1FA634F2EA3589000B491FD /* Metal.framework */,
+				A1FA63502EA3589000B491FD /* MetalKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		A1FA63552EA3648400B491FD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1FA63692EA364F000B491FD /* imgui.h in Headers */,
+				A1FA63682EA364F000B491FD /* imconfig.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		A1FA63062EA3562200B491FD /* imgui-iOS-Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1FA631F2EA3562300B491FD /* Build configuration list for PBXNativeTarget "imgui-iOS-Demo" */;
+			buildPhases = (
+				A1FA63032EA3562200B491FD /* Sources */,
+				A1FA63042EA3562200B491FD /* Frameworks */,
+				A1FA63052EA3562200B491FD /* Resources */,
+				A1FA63422EA356FC00B491FD /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A1FA63612EA3648500B491FD /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				A1FA63092EA3562200B491FD /* imgui-iOS-Demo */,
+			);
+			name = "imgui-iOS-Demo";
+			packageProductDependencies = (
+			);
+			productName = "imgui-iOS-Demo";
+			productReference = A1FA63072EA3562200B491FD /* imgui-iOS-Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A1FA63592EA3648400B491FD /* imguiFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1FA63642EA3648500B491FD /* Build configuration list for PBXNativeTarget "imguiFramework" */;
+			buildPhases = (
+				A1FA63552EA3648400B491FD /* Headers */,
+				A1FA63562EA3648400B491FD /* Sources */,
+				A1FA63572EA3648400B491FD /* Frameworks */,
+				A1FA63582EA3648400B491FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				A1FA635B2EA3648500B491FD /* imguiFramework */,
+			);
+			name = imguiFramework;
+			packageProductDependencies = (
+			);
+			productName = imguiFramework;
+			productReference = A1FA635A2EA3648400B491FD /* imguiFramework.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A1FA62FF2EA3562200B491FD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1640;
+				TargetAttributes = {
+					A1FA63062EA3562200B491FD = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					A1FA63592EA3648400B491FD = {
+						CreatedOnToolsVersion = 16.4;
+					};
+				};
+			};
+			buildConfigurationList = A1FA63022EA3562200B491FD /* Build configuration list for PBXProject "imgui-iOS-Demo" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A1FA62FE2EA3562200B491FD;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = A1FA63082EA3562200B491FD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A1FA63062EA3562200B491FD /* imgui-iOS-Demo */,
+				A1FA63592EA3648400B491FD /* imguiFramework */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A1FA63052EA3562200B491FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1FA63582EA3648400B491FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A1FA63032EA3562200B491FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1FA63562EA3648400B491FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1FA636A2EA3657800B491FD /* imgui_impl_metal.mm in Sources */,
+				A1FA636B2EA3657800B491FD /* imgui.cpp in Sources */,
+				A1FA636C2EA3657800B491FD /* imgui_demo.cpp in Sources */,
+				A1FA636D2EA3657800B491FD /* imgui_draw.cpp in Sources */,
+				A1FA636E2EA3657800B491FD /* imgui_tables.cpp in Sources */,
+				A1FA636F2EA3657800B491FD /* imgui_widgets.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A1FA63612EA3648500B491FD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A1FA63592EA3648400B491FD /* imguiFramework */;
+			targetProxy = A1FA63602EA3648500B491FD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A1FA63202EA3562300B491FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AD6ZXSG3EW;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "imgui-iOS-Demo/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.iamadman.imgui-iOS-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A1FA63212EA3562300B491FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AD6ZXSG3EW;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "imgui-iOS-Demo/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.iamadman.imgui-iOS-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A1FA63222EA3562300B491FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = AD6ZXSG3EW;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A1FA63232EA3562300B491FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = AD6ZXSG3EW;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A1FA63652EA3648500B491FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AD6ZXSG3EW;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../../**";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.iamadman.imguiFramework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A1FA63662EA3648500B491FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AD6ZXSG3EW;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../../**";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.iamadman.imguiFramework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A1FA63022EA3562200B491FD /* Build configuration list for PBXProject "imgui-iOS-Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1FA63222EA3562300B491FD /* Debug */,
+				A1FA63232EA3562300B491FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1FA631F2EA3562300B491FD /* Build configuration list for PBXNativeTarget "imgui-iOS-Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1FA63202EA3562300B491FD /* Debug */,
+				A1FA63212EA3562300B491FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1FA63642EA3648500B491FD /* Build configuration list for PBXNativeTarget "imguiFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1FA63652EA3648500B491FD /* Debug */,
+				A1FA63662EA3648500B491FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A1FA62FF2EA3562200B491FD /* Project object */;
+}
